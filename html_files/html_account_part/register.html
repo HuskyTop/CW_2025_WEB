@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>info</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">AirFlowSim</div>
+        <nav class="nav-buttons">
+            <a href="http://localhost:3000/simulation" class="nav-btn">Симуляція</a>
+            <a href="http://localhost:3000/info" class="nav-btn">Теоретична інформація</a>
+            <a href="http://localhost:3000/user" class="nav-btn">Особистий кабінет</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="register-container">
+            <h1>Отакої!<br>Схоже Ви не зареєстровані...</h1><br>
+            <h2>Реєстрація</h2>
+
+            <form method="POST" action="/register">
+                <label><b>Логін: </b><input type="text" name="username" maxlength="20" required></label><br>
+                <label><b>Пароль: </b><input type="password" name="password" maxlength="20" required></label><br>
+                <button type="submit"><b>Зареєструватися</b></button>
+            </form>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="footer-img">
+            <a href="https://github.com/HuskyTop/CW_2025_WEB" target="_blank">
+                <img src="images/github.png" alt="GitHub">
+            </a>
+            <a href="https://www.whatsapp.com/" target="_blank">
+                <img src="images/whatsup.png" alt="WhatsApp">
+            </a>
+        </div>
+
+        <p style="font-weight: 400;">© Студент: Осьмак Ярослав<br>Група: ТВ-31</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

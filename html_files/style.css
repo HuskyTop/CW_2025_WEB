@@ -1,0 +1,362 @@
+/* Додай це на початок */
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    font-family: Arial, sans-serif;
+    background: #f0f4f8;
+    color: #333;
+}
+
+/* Інші стилі без змін */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0077b6;
+    padding: 1rem 2rem;
+    color: white;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-buttons a {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: white;
+    color: #0077b6;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-left: 10px;
+}
+
+.nav-buttons a:hover {
+    background-color: #e0e0e0;
+}
+
+main {
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    min-height: 500px;
+}
+
+.param {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 30px;
+    background-color: antiquewhite;
+    font-family: Arial, sans-serif;
+    border-radius: 5%;
+    gap: 12px;
+    width: 300px;
+}
+
+.param h2 {
+    margin: 10px 0 5px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.param label {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    color: #444;
+    gap: 2px;
+}
+
+.param input[type="range"] {
+    width: 100%;
+}
+
+.param span {
+    font-size: 13px;
+    color: #666;
+}
+
+.user-profile {
+    display: flex;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.profile-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-photo {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 30%;
+    border: 2px solid #ccc;
+}
+
+.profile-right {
+    flex: 2;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logout-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.logout-btn:hover {
+    background-color: #c9302c;
+}
+
+
+.login-box form label {
+    display: block;
+    margin: 1rem 0;
+    text-align: left;
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"],
+main .register-container input[type="text"],
+main .register-container input[type="password"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login-box a h3 {
+    margin-top: 1.5rem;
+    font-weight: normal;
+    color: #3478f6;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Контейнер */
+main .register-container,
+.login-box {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+/* Заголовки */
+main .register-container h1,
+.login-box h1,
+.login-box h2 {
+    font-size: 2rem;
+    color: #2b5876;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+main .register-container h2 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+/* Форма */
+main .register-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+main .register-container form label {
+    font-size: 1rem;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+}
+
+main .register-container input:focus {
+    border-color: #2b5876;
+    outline: none;
+}
+
+/* Кнопка */
+main .register-container button[type="submit"],
+.login-box button {
+    background-color: #2b5876;
+    min-width: 600px;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    align-self: center;
+    margin-top: 1rem;
+}
+
+main .register-container button[type="submit"]:hover,
+.login-box button:hover {
+    background-color: #1e3c5a;
+}
+
+
+.simulation-history {
+    margin: 20px;
+}
+
+.simulation-history table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.simulation-history th,
+.simulation-history td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.simulation-history th {
+    background-color: #eee;
+}
+
+
+.buttons {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.buttons button {
+    flex: 1;
+    padding: 8px 12px;
+    background-color: #0077b6;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.buttons button:hover {
+    background-color: #005f94;
+}
+
+.simulations {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#simulation-area-pressure,
+#simulation-area-airflow,
+#simulation-area {
+    background-color: white;
+    border: 3px dashed black;
+    height: 400px;
+    width: 600px;
+}
+
+footer {
+    height: 10%;
+    text-align: center;
+    padding: 1rem;
+    background: #0077b6;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin-top: auto;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-img {
+    display: flex;
+    gap: 3rem;
+    margin: 0 1rem;
+}
+
+
+.footer-img img {
+    height: 40px;
+    /* чітка висота */
+    width: auto;
+    /* ширина автоматично підлаштовується */
+    object-fit: contain;
+    /* зберігає пропорції */
+    cursor: pointer;
+}
+
+.info-section {
+    background-color: #f9fbfd;
+    padding: 30px;
+    border-radius: 16px;
+    max-width: 1000px;
+    margin: 40px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-size: 1.1rem;
+    height: 91%;
+    color: #333;
+}
+
+.info-section h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #0b4b82;
+}
+
+.info-section p {
+    margin-bottom: 16px;
+}
+
+.image-container {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.image-container img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.img-caption {
+    font-size: 0.95rem;
+    color: #666;
+    margin-top: 10px;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>info</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">AirFlowSim</div>
+        <nav class="nav-buttons">
+            <a href="http://localhost:3000/simulation" class="nav-btn">Симуляція</a>
+            <a href="http://localhost:3000/info" class="nav-btn">Теоретична інформація</a>
+            <a href="http://localhost:3000/user" class="nav-btn">Особистий кабінет</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="info-section">
+            <h1>Технічна реалізація симуляції повітряного потоку</h1>
+            <p>
+                Симуляція моделює поведінку повітряного потоку, який обтікає профіль крила або іншу перешкоду.
+                Вона заснована на базових принципах аеродинаміки, де враховуються такі параметри як густина повітря,
+                швидкість потоку, рівень турбулентності, довжина та товщина перешкоди.
+            </p>
+            <p>
+                Веб-додаток побудований на основі JavaScript та Canvas API, що дозволяє створювати інтерактивну графіку
+                прямо в браузері. Користувач задає початкові параметри, які потім обробляються та використовуються для
+                побудови візуальної симуляції потоку частинок.
+            </p>
+            <p>
+                Для збереження та завантаження симуляцій використовується локальна база даних SQLite, взаємодія з якою
+                відбувається через сервер на Node.js. Це дозволяє кожному користувачу мати доступ до своїх збережених
+                результатів і швидко повторювати експерименти.
+            </p>
+            <p>
+                На зображенні нижче зображено умовну схему профілю крила, який використовується для візуального
+                представлення
+                взаємодії з потоком:
+            </p>
+
+            <div class="image-container">
+                <img src="images/profile.png" alt="Схема профілю крила">
+                <p class="img-caption">Схема профілю крила для моделювання потоку</p>
+            </div>
+
+            <p>
+                Під час симуляції частинки рухаються відповідно до визначених параметрів, імітуючи ламінарний або
+                турбулентний
+                потік залежно від умов. Завдяки візуалізації користувач може наочно побачити вплив зміни параметрів на
+                поведінку повітря.
+            </p>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="footer-img">
+            <a href="https://github.com/HuskyTop/CW_2025_WEB" target="_blank">
+                <img src="images/github.png" alt="GitHub">
+            </a>
+            <a href="https://www.whatsapp.com/" target="_blank">
+                <img src="images/whatsup.png" alt="WhatsApp">
+            </a>
+        </div>
+
+        <p style="font-weight: 400;">© Студент: Осьмак Ярослав<br>Група: ТВ-31</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

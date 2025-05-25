@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simulation</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/simulation.js" defer></script>
+    <script src="js/sim_menu.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">AirFlowSim</div>
+        <nav class="nav-buttons">
+            <a href="http://localhost:3000/simulation" class="nav-btn">Симуляція</a>
+            <a href="http://localhost:3000/info" class="nav-btn">Теоретична інформація</a>
+            <a href="http://localhost:3000/user" class="nav-btn">Особистий кабінет</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="simulations">
+            <canvas id="simulation-area">
+
+            </canvas>
+
+        </div>
+
+
+        <div class="param">
+            <h2>Параметри Симуляції</h2>
+
+            <label>
+                Об'єм потоку (1–10):
+                <input type="range" min="1" max="10" step="0.2" id="flowSlider">
+                <span id="flowValue">5</span>
+            </label>
+
+            <label>
+                Швидкість потоку (1–8):
+                <input type="range" min="1" max="8" step="1" id="speedSlider">
+                <span id="speedValue">4</span>
+            </label>
+
+            <label>
+                Щільність потоку (0.1–0.8):
+                <input type="range" min="0.1" max="0.8" step="0.05" id="densitySlider">
+                <span id="densityValue">0.4</span>
+            </label>
+
+            <label>
+                Турбулентність потоку (0.0001–0.2):
+                <input type="range" min="0.0001" max="0.2" step="0.0001" id="turbulenceSlider">
+                <span id="turbulenceValue">0.01</span>
+            </label>
+
+            <label>
+                <input type="checkbox" id="pressureToggle" checked>
+                Відображати тиск
+            </label>
+
+            <h2>Параметри Профілю</h2>
+
+            <label>
+                Довжина хорди крила (150–400):
+                <input type="range" min="150" max="400" step="10" id="chordSlider">
+                <span id="chordValue">300</span>
+            </label>
+
+            <label>
+                Макс. товщина крила (12% - 50%):
+                <input type="range" min="10" max="50" step="1" id="thicknessSlider">
+                <span id="thicknessValue">12</span>
+            </label>
+
+            <div class="buttons">
+                <button id="clearBtn">Очистити</button>
+                <button id="saveBtn">Зберегти</button>
+                <button id="simulateBtn">Симуляція</button>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-img">
+            <a href="https://github.com/HuskyTop/CW_2025_WEB" target="_blank">
+                <img src="images/github.png" alt="GitHub">
+            </a>
+            <a href="https://www.whatsapp.com/" target="_blank">
+                <img src="images/whatsup.png" alt="WhatsApp">
+            </a>
+        </div>
+
+        <p style="font-weight: 400;">© Студент: Осьмак Ярослав<br>Група: ТВ-31</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

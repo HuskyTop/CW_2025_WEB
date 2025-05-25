@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/user.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">AirFlowSim</div>
+        <nav class="nav-buttons">
+            <a href="http://localhost:3000/simulation" class="nav-btn">Симуляція</a>
+            <a href="http://localhost:3000/info" class="nav-btn">Теоретична інформація</a>
+            <a href="http://localhost:3000/user" class="nav-btn">Особистий кабінет</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="user-profile">
+            <div class="profile-left">
+                <img src="images/user.webp" alt="Фото користувача" class="profile-photo">
+            </div>
+            <div class="profile-right">
+                <h2 id="username-display">Вітаю, </h2>
+                <button id="logoutBtn" class="logout-btn"><b>Вийти</b></button>
+            </div>
+        </section>
+
+        <section class="simulation-history">
+            <h2>Історія симуляцій</h2>
+            <table id="simTable">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Обʼєм</th>
+                        <th>Швидкість</th>
+                        <th>Густина</th>
+                        <th>Турбулентність</th>
+                        <th>Довжина хорди</th>
+                        <th>Товщина</th>
+                        <th>Завантажити</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Дані з симуляцій будуть вставлені JavaScript'ом -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="footer-img">
+            <a href="https://github.com/HuskyTop/CW_2025_WEB" target="_blank">
+                <img src="images/github.png" alt="GitHub">
+            </a>
+            <a href="https://www.whatsapp.com/" target="_blank">
+                <img src="images/whatsup.png" alt="WhatsApp">
+            </a>
+        </div>
+
+        <p style="font-weight: 400;">© Студент: Осьмак Ярослав<br>Група: ТВ-31</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
